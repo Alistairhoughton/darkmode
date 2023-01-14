@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:wght@500;600;700;800&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-size: 10px;
+}
+
+body {
+  overflow: overlay;
+}
+
+/* vars  */
+
+:root {
+  --background: white;
+  --text: black;
+  --backgroundTwo: rgb(250, 177, 93);
+}
+/* vars  */
+
+.light {
+  background-color: var(--background);
+  color: var(--text);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(175, 175, 175) rgba(46, 46, 46, 0);
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+  opacity: 0;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: rgba(114, 114, 114, 0.61);
+  border-radius: 60px;
+  border: transparent;
+  opacity: 0;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  gap: 1rem;
+  transition: ease, 0.3s;
+  font-family: "Andada Pro", serif;
+}
+
+.main h1 {
+  font-size: 3rem;
+}
+
+.main p {
+  font-size: 2rem;
+}
+
+.nav {
+  width: 100%;
+  height: 7rem;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 3rem 0 3rem;
+  transition: ease, 0.3s;
+}
+
+.article {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Andada Pro", serif;
+  font-size: 4rem;
+  background-color: var(--backgroundTwo);
+  transition: ease, 0.3s;
+}
+
+.article h2 {
+  font-size: 3rem;
+}
+
+/* keep this at bottom  */
+
+.dark {
+  --background: black;
+  --text: white;
+  --backgroundTwo: #b3b1c7;
+  transition: ease, 0.3s;
+}
+
+.nav {
+  background-color: transparent;
+}
